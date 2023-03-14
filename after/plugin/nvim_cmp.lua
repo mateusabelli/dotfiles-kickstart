@@ -1,5 +1,7 @@
-local cmp = require 'cmp'
-local luasnip = require 'luasnip'
+local status, cmp = pcall(require, "cmp")
+if (not status) then return end
+local status2, luasnip = pcall(require, "luasnip")
+if (not status2) then return end
 
 luasnip.config.setup {}
 

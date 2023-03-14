@@ -6,7 +6,8 @@
  |_|  |_|\__,_|\__\___|\__,_|___/ 
 
  https://github.com/mateusabelli
- ]]--
+
+]]--
 
 require('mateus.options')
 require('mateus.keymaps')
