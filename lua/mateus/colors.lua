@@ -44,9 +44,9 @@ theme.setup({
             enabled = true,
             underlines = {
                 errors = { "undercurl" },
-                hints = { "undercurl" },
+                hints = {},
                 warnings = { "undercurl" },
-                information = { "undercurl" },
+                information = {},
             },
         },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
