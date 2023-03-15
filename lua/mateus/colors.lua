@@ -40,6 +40,15 @@ theme.setup({
         telescope = true,
         -- notify = false,
         -- mini = false,
+        native_lsp = {
+            enabled = true,
+            underlines = {
+                errors = { "undercurl" },
+                hints = { "undercurl" },
+                warnings = { "undercurl" },
+                information = { "undercurl" },
+            },
+        },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })

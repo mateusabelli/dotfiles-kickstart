@@ -16,6 +16,24 @@ telescope.setup {
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
 
+-- Enable telescope file browser, if installed
+pcall(require('telescope').load_extension, 'file_browser')
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fB",
+  ":Telescope file_browser <CR>",
+  { noremap = true }
+)
+
+-- open file_browser with the path of the current buffer
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fb",
+  ":Telescope file_browser path=%:p:h select_buffer=true <CR>",
+  { noremap = true }
+)
+
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
